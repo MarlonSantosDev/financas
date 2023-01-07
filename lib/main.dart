@@ -1,3 +1,4 @@
+import 'package:financas/menu/MenuPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Finanças',
+      debugShowCheckedModeBanner: false,
+      title: 'TISA Finanças',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: const Text("?"),
+      home: const MenuPage(),
     );
   }
 }
-
